@@ -1,0 +1,18 @@
+INVITACIÓN XV AÑOS DE XIMENA
+
+ARCHIVOS
+- index.html: página principal
+- evento.ics: archivo para agregar el evento al calendario
+- musica.mp3: agrega aquí la canción deseada (no incluida)
+
+ANTES DE PUBLICAR
+1. Cambia el número 5210000000000 en index.html por el WhatsApp real.
+2. Coloca la canción elegida con el nombre exacto musica.mp3.
+3. Si tienes las fotos originales, reemplaza las URL de las imágenes por archivos locales.
+
+PUBLICACIÓN EN GITHUB PAGES
+1. Crea un repositorio público nuevo.
+2. Sube index.html, evento.ics y musica.mp3.
+3. Abre Settings > Pages.
+4. En Source selecciona Deploy from a branch.
+5. Selecciona main y /(root), luego Save.

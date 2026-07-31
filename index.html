@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#201b2f">
+  <meta name="description" content="Invitación XV Años de Ximena — 9 de septiembre de 2026">
+  <title>XV Años de Ximena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#f8f4ef; --muted:#ddd4cb; --gold:#d6b36a;
+      --plum:#201b2f; --plum2:#3a2745; --rose:#b98691;
+      --glass:rgba(255,255,255,.09); --line:rgba(214,179,106,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#17131f;color:var(--ink);font-family:Montserrat,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
+    a{color:inherit}
+    .hero{min-height:100svh;position:relative;display:grid;place-items:center;text-align:center;isolation:isolate;background:
+      linear-gradient(180deg,rgba(16,10,23,.18),rgba(16,10,23,.76)),
+      linear-gradient(90deg,rgba(36,18,45,.35),rgba(36,18,45,.05)),
+      url("https://ovjstvkjedyscwyfnoma.supabase.co/storage/v1/object/public/bloques/07a9c5da-23f1-444a-8ba3-2e533662326d/3e2a433d-598a-4d76-8666-142c6e02b5fb/e81a7627-2da0-4303-b852-0fbb402e948a.jpeg") center/cover no-repeat}
+    .hero:after{content:"";position:absolute;inset:18px;border:1px solid var(--line);z-index:-1}
+    .hero-content{padding:80px 24px;max-width:880px}
+    .eyebrow{letter-spacing:.42em;text-transform:uppercase;font-size:.72rem;color:var(--gold)}
+    h1{font-family:Parisienne,cursive;font-size:clamp(5rem,20vw,10rem);font-weight:400;line-height:.85;margin:18px 0 8px;text-shadow:0 12px 35px #000}
+    .subtitle{font-family:Italiana,serif;font-size:clamp(1.4rem,5vw,2.4rem);letter-spacing:.1em}
+    .date{margin:26px 0 34px;letter-spacing:.22em;text-transform:uppercase}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--gold);background:rgba(22,16,30,.45);color:#fff;text-decoration:none;padding:14px 22px;border-radius:999px;backdrop-filter:blur(12px);transition:.25s;cursor:pointer;font:inherit}
+    .btn:hover{transform:translateY(-2px);background:var(--gold);color:#21192a}
+    .music{position:fixed;right:16px;bottom:18px;z-index:20;width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);background:rgba(32,27,47,.84);color:white;cursor:pointer;box-shadow:0 8px 30px #0008}
+    section{padding:88px 22px;position:relative}
+    .wrap{max-width:1050px;margin:auto}
+    .kicker{text-align:center;color:var(--gold);letter-spacing:.32em;text-transform:uppercase;font-size:.72rem}
+    h2{text-align:center;font-family:Italiana,serif;font-size:clamp(2.4rem,8vw,4.5rem);font-weight:400;margin:10px 0 22px}
+    .lead{max-width:700px;margin:0 auto 38px;text-align:center;color:var(--muted);line-height:1.8}
+    .count{background:radial-gradient(circle at top,#4a3156,#211a2c 62%)}
+    .count-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:720px;margin:auto}
+    .count-box{padding:26px 8px;text-align:center;background:var(--glass);border:1px solid var(--line);border-radius:18px;backdrop-filter:blur(10px)}
+    .num{font-family:Italiana,serif;font-size:clamp(2rem,7vw,4rem);color:var(--gold)}
+    .lab{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase}
+    .details{background:#f2ece5;color:#342b31}
+    .details .kicker{color:#9c6b42}
+    .details-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:35px}
+    .card{padding:34px;border:1px solid #cdbcae;background:rgba(255,255,255,.55);border-radius:24px;text-align:center;box-shadow:0 15px 45px rgba(64,39,45,.08)}
+    .icon{font-size:2rem}
+    .card h3{font-family:Italiana,serif;font-size:1.9rem;font-weight:400;margin:12px 0}
+    .card p{line-height:1.7}
+    .timeline{background:linear-gradient(145deg,#1b1724,#38253d)}
+    .timeline-list{max-width:680px;margin:44px auto 0;position:relative}
+    .timeline-list:before{content:"";position:absolute;left:74px;top:0;bottom:0;width:1px;background:var(--line)}
+    .event{display:grid;grid-template-columns:58px 1fr;gap:34px;margin:0 0 32px;align-items:center}
+    .event time{font-size:.82rem;color:var(--gold);text-align:right}
+    .event div{padding:18px 22px;border:1px solid var(--line);border-radius:16px;background:var(--glass);position:relative}
+    .event div:before{content:"";position:absolute;left:-42px;top:50%;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(214,179,106,.12)}
+    .gallery{background:#eee6df;color:#31282d}
+    .gallery .kicker{color:#9c6b42}
+    .photos{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:280px 280px;gap:14px;margin-top:35px}
+    .photo{overflow:hidden;border-radius:22px;box-shadow:0 18px 40px #5c404233}
+    .photo:first-child{grid-row:1/3}
+    .photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+    .photo:nth-child(2) img{object-position:center 20%}
+    .photo:nth-child(3) img{object-position:center 70%}
+    .photo:hover img{transform:scale(1.05)}
+    .parents{text-align:center;background:radial-gradient(circle at center,#47304d,#201a2a)}
+    .names{display:flex;justify-content:center;gap:80px;flex-wrap:wrap;margin-top:34px}
+    .name small{display:block;color:var(--gold);letter-spacing:.25em;text-transform:uppercase;margin-bottom:10px}
+    .name strong{font-family:Italiana,serif;font-size:2rem;font-weight:400}
+    .gift{background:#f2ece5;color:#31282d;text-align:center}
+    .gift .kicker{color:#9c6b42}
+    .envelope{font-size:3.5rem;margin:20px}
+    .rsvp{text-align:center;background:
+      linear-gradient(rgba(24,17,31,.77),rgba(24,17,31,.9)),
+      url("https://ovjstvkjedyscwyfnoma.supabase.co/storage/v1/object/public/bloques/07a9c5da-23f1-444a-8ba3-2e533662326d/3e2a433d-598a-4d76-8666-142c6e02b5fb/e81a7627-2da0-4303-b852-0fbb402e948a.jpeg") center/cover fixed}
+    footer{text-align:center;padding:36px 20px;background:#120f18;color:#aaa;font-size:.75rem}
+    .reveal{opacity:0;transform:translateY(28px);transition:.8s ease}
+    .reveal.visible{opacity:1;transform:none}
+    @media(max-width:700px){
+      .count-grid{grid-template-columns:repeat(2,1fr)}
+      .details-grid{grid-template-columns:1fr}
+      .photos{grid-template-columns:1fr;grid-template-rows:420px 220px 220px}
+      .photo:first-child{grid-row:auto}
+      .timeline-list:before{left:59px}
+      .event{grid-template-columns:47px 1fr;gap:25px}
+      .event div:before{left:-32px}
+      .names{gap:35px}
+    }
+  </style>
+</head>
+<body>
+  <button class="music" id="musicBtn" aria-label="Activar música">♫</button>
+  <audio id="music" loop preload="none">
+    <!-- Sustituye musica.mp3 por el archivo musical deseado -->
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="hero">
+    <div class="hero-content reveal">
+      <div class="eyebrow">Mis XV años</div>
+      <h1>Ximena</h1>
+      <div class="subtitle">Una noche para recordar</div>
+      <div class="date">09 · 09 · 2026 &nbsp; | &nbsp; 7:00 PM</div>
+      <a class="btn" href="#detalles">Ver invitación ↓</a>
+    </div>
+  </header>
+
+  <section class="count">
+    <div class="wrap reveal">
+      <div class="kicker">Falta muy poco</div>
+      <h2>Cuenta regresiva</h2>
+      <div class="count-grid">
+        <div class="count-box"><div class="num" id="days">00</div><div class="lab">Días</div></div>
+        <div class="count-box"><div class="num" id="hours">00</div><div class="lab">Horas</div></div>
+        <div class="count-box"><div class="num" id="mins">00</div><div class="lab">Minutos</div></div>
+        <div class="count-box"><div class="num" id="secs">00</div><div class="lab">Segundos</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="details" id="detalles">
+    <div class="wrap reveal">
+      <div class="kicker">Celebremos juntos</div>
+      <h2>Detalles del evento</h2>
+      <p class="lead">Será un honor compartir contigo esta noche tan especial.</p>
+      <div class="details-grid">
+        <div class="card">
+          <div class="icon">✦</div>
+          <h3>Fecha y hora</h3>
+          <p>Miércoles 9 de septiembre de 2026<br><strong>7:00 PM</strong></p>
+          <a class="btn" style="color:#342b31;background:transparent" href="evento.ics" download>Agregar al calendario</a>
+        </div>
+        <div class="card">
+          <div class="icon">⌖</div>
+          <h3>Barcelona Eventos</h3>
+          <p>Boulevard Julián Treviño Elizondo, El Milagro, Huinalá, Ciudad Apodaca, Nuevo León.</p>
+          <a class="btn" style="color:#342b31;background:transparent" target="_blank" rel="noopener" href="https://www.google.com/maps?q=25.7445798,-100.1839959">Abrir en Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline">
+    <div class="wrap reveal">
+      <div class="kicker">Programa</div>
+      <h2>Itinerario</h2>
+      <div class="timeline-list">
+        <div class="event"><time>7:00 PM</time><div>Recepción</div></div>
+        <div class="event"><time>8:30 PM</time><div>Comida</div></div>
+        <div class="event"><time>9:30 PM</time><div>Baile de quinceañera</div></div>
+        <div class="event"><time>10:15 PM</time><div>Sorpresa</div></div>
+        <div class="event"><time>11:00 PM</time><div>DJ y batucada</div></div>
+        <div class="event"><time>1:00 AM</time><div>Fin de fiesta</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="wrap reveal">
+      <div class="kicker">Momentos</div>
+      <h2>Galería</h2>
+      <p class="lead">Una mirada a esta etapa inolvidable.</p>
+      <div class="photos">
+        <div class="photo"><img alt="Ximena" src="https://ovjstvkjedyscwyfnoma.supabase.co/storage/v1/object/public/bloques/07a9c5da-23f1-444a-8ba3-2e533662326d/3e2a433d-598a-4d76-8666-142c6e02b5fb/e81a7627-2da0-4303-b852-0fbb402e948a.jpeg"></div>
+        <div class="photo"><img alt="Ximena" src="https://ovjstvkjedyscwyfnoma.supabase.co/storage/v1/object/public/bloques/07a9c5da-23f1-444a-8ba3-2e533662326d/3e2a433d-598a-4d76-8666-142c6e02b5fb/e81a7627-2da0-4303-b852-0fbb402e948a.jpeg"></div>
+        <div class="photo"><img alt="Ximena" src="https://ovjstvkjedyscwyfnoma.supabase.co/storage/v1/object/public/bloques/07a9c5da-23f1-444a-8ba3-2e533662326d/3e2a433d-598a-4d76-8666-142c6e02b5fb/e81a7627-2da0-4303-b852-0fbb402e948a.jpeg"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="details">
+    <div class="wrap reveal">
+      <div class="kicker">Etiqueta</div>
+      <h2>Código de vestimenta</h2>
+      <div class="card" style="max-width:650px;margin:auto">
+        <div class="icon">♢</div>
+        <h3>Formal</h3>
+        <p>Te pedimos asistir con vestimenta formal.<br><strong>No llevar mezclilla.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="parents">
+    <div class="wrap reveal">
+      <div class="kicker">Con el amor de</div>
+      <h2>Mis padres</h2>
+      <div class="names">
+        <div class="name"><small>Mamá</small><strong>Karina Delgado</strong></div>
+        <div class="name"><small>Papá</small><strong>Alejandro Sánchez</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gift">
+    <div class="wrap reveal">
+      <div class="kicker">Mesa de regalos</div>
+      <h2>Tu presencia es mi regalo</h2>
+      <div class="envelope">✉</div>
+      <p class="lead">El mejor regalo es que compartas conmigo este día. Si deseas obsequiarme algo, será bienvenido un detalle en sobre.</p>
+    </div>
+  </section>
+
+  <section class="rsvp">
+    <div class="wrap reveal">
+      <div class="kicker">Confirma tu asistencia</div>
+      <h2>¿Nos acompañas?</h2>
+      <p class="lead">Ayúdanos a preparar cada detalle confirmando tu asistencia.</p>
+      <!-- Sustituye 5210000000000 por el número real -->
+      <a class="btn" href="https://wa.me/5210000000000?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%20XV%20de%20Ximena" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>XV Años de Ximena · 09.09.2026</footer>
+
+  <script>
+    const target = new Date('2026-09-09T19:00:00-06:00').getTime();
+    function tick(){
+      const d = Math.max(0,target-Date.now());
+      const vals=[Math.floor(d/86400000),Math.floor(d/3600000)%24,Math.floor(d/60000)%60,Math.floor(d/1000)%60];
+      ['days','hours','mins','secs'].forEach((id,i)=>document.getElementById(id).textContent=String(vals[i]).padStart(2,'0'));
+    } tick(); setInterval(tick,1000);
+
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    const audio=document.getElementById('music'), btn=document.getElementById('musicBtn');
+    btn.addEventListener('click',async()=>{try{
+      if(audio.paused){await audio.play();btn.textContent='❚❚'}else{audio.pause();btn.textContent='♫'}
+    }catch(e){alert('Agrega un archivo llamado musica.mp3 para activar la música.')}});
+  </script>
+</body>
+</html>
